@@ -34,7 +34,7 @@ public class Store {
 
     @Override
     public String toString() {
-        return "Store: { Name: " + name + ", Quantity: " + employeeQuantity + ", Base Salary: " + employeeBaseSalary + ", Address: " + address + ", Foundation: " + foundationDate + " }";
+        return "Store: { Name: " + name + ", Quantity: " + employeeQuantity + ", Base Salary: " + employeeBaseSalary + ", Address: " + address.toString() + ", Foundation: " + foundationDate.toString() + " }";
     }
 
     public double SalaryExpenses() {
