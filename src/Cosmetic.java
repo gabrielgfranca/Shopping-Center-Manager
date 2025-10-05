@@ -16,6 +16,6 @@ public class Cosmetic extends Store{
 
     @Override
     public String toString() {
-        return super.toString() + "CommercializationFee: " + commercializationFee;
+        return super.toString() + "Cosmetic { Commercialization Fee: " + commercializationFee + " }";
     }
 }

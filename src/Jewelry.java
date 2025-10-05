@@ -16,6 +16,6 @@ public class Jewelry extends Store{
 
     @Override
     public String toString() {
-        return super.toString() + ", Monthly Sales Goal: " + monthlySalesGoal;
+        return super.toString() + "Jewelry { Monthly Sales Goal: " + monthlySalesGoal + " }";
     }
 }

@@ -16,6 +16,6 @@ public class Clothing extends Store {
 
     @Override
     public String toString() {
-        return super.toString() + ", ImportedProducts: " + ImportedProducts;
+        return super.toString() + "Clothing { ImportedProducts: " + ImportedProducts + " }";
     }
 }
