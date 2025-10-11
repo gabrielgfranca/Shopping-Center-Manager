@@ -1,3 +1,9 @@
+package models.subStores;
+
+import models.Address;
+import models.Date;
+import models.Store;
+
 public class Clothing extends Store {
     private boolean ImportedProducts;
 

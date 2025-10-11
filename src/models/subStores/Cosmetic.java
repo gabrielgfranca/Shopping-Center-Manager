@@ -1,4 +1,10 @@
-public class Cosmetic extends Store{
+package models.subStores;
+
+import models.Address;
+import models.Date;
+import models.Store;
+
+public class Cosmetic extends Store {
     private double commercializationFee;
 
     public Cosmetic(String name, int employeeQuantity, Address address, Date foundationDate, double commercializationFee) {

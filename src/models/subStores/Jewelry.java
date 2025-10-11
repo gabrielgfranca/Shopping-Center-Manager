@@ -1,4 +1,10 @@
-public class Jewelry extends Store{
+package models.subStores;
+
+import models.Address;
+import models.Date;
+import models.Store;
+
+public class Jewelry extends Store {
     private double monthlySalesGoal;
 
     public Jewelry(String name, int employeeQuantity, Address address, Date fundationDate, double monthlySalesGoal) {

@@ -1,3 +1,5 @@
+package models;
+
 public class Store {
     private String name;
     private int employeeQuantity;
