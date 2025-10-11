@@ -7,17 +7,18 @@ import models.Store;
 public class Cosmetic extends Store {
     private double commercializationFee;
 
-    public Cosmetic(String name, int employeeQuantity, Address address, Date foundationDate, double commercializationFee) {
-        super(name, employeeQuantity, address, foundationDate);
+    public Cosmetic(String name, int employeeQuantity, Address address, Date foundationDate, double commercializationFee, int productMaximumStock) {
+        super(name, employeeQuantity, address, foundationDate, productMaximumStock);
         this.commercializationFee = commercializationFee;
     }
 
-    public Cosmetic(String name, int employeeQuantity, double employeeBaseSalary, Address address, Date foundationDate, double commercializationFee) {
-        super(name, employeeQuantity, employeeBaseSalary, address, foundationDate);
+    public Cosmetic(String name, int employeeQuantity, double employeeBaseSalary, Address address, Date foundationDate, double commercializationFee, int productMaximumStock) {
+        super(name, employeeQuantity, employeeBaseSalary, address, foundationDate, productMaximumStock);
         this.commercializationFee = commercializationFee;
     }
 
     public double getCommercializationFee() { return commercializationFee; }
+    @Override public String getType() { return "Cosmetic"; }
     public void setCommercializationFee(double commercializationFee) { this.commercializationFee = commercializationFee; }
 
     @Override

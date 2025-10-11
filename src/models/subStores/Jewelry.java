@@ -18,6 +18,7 @@ public class Jewelry extends Store {
     }
 
     public double getMonthlySalesGoal() { return monthlySalesGoal; }
+    @Override public String getType() { return "Jewelry"; }
     public void setMonthlySalesGoal(double monthlySalesGoal) { this.monthlySalesGoal = monthlySalesGoal; }
 
     @Override
