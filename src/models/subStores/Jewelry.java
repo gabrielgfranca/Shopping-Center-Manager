@@ -7,13 +7,13 @@ import models.Store;
 public class Jewelry extends Store {
     private double monthlySalesGoal;
 
-    public Jewelry(String name, int employeeQuantity, Address address, Date fundationDate, double monthlySalesGoal) {
-        super(name, employeeQuantity, address, fundationDate);
+    public Jewelry(String name, int employeeQuantity, Address address, Date fundationDate, double monthlySalesGoal, int productMaximumStock) {
+        super(name, employeeQuantity, address, fundationDate, productMaximumStock);
         this.monthlySalesGoal = monthlySalesGoal;
     }
 
-    public Jewelry(String name, int employeeQuantity, double employeeBaseSalary, Address address, Date fundationDate, double monthlySalesGoal) {
-        super(name, employeeQuantity, employeeBaseSalary, address, fundationDate);
+    public Jewelry(String name, int employeeQuantity, double employeeBaseSalary, Address address, Date fundationDate, double monthlySalesGoal, int productMaximumStock) {
+        super(name, employeeQuantity, employeeBaseSalary, address, fundationDate, productMaximumStock);
         this.monthlySalesGoal = monthlySalesGoal;
     }
 
