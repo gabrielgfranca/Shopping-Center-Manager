@@ -49,8 +49,12 @@ public class CreateStore {
         int year = input.nextInt();
         input.nextLine();
 
+        System.out.println("Maximum product stock: ");
+        int maximumStock = input.nextInt();
+        input.nextLine();
+
         Date foundationDate = new Date(year, month, day);
-        Store finalStore = new Store(storeName, employeeQuantity,  employeeBaseSalary, storeAddress, foundationDate);
+        Store finalStore = new Store(storeName, employeeQuantity, employeeBaseSalary, storeAddress, foundationDate, maximumStock);
 
         System.out.println("Store created successfully!");
         return finalStore;
